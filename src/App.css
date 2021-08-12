@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#cards {
+  width: 0 auto;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+}
+.marginbutton {
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-device-width: 701px) {
+  html {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+.card {
+  width: 160px;
+  height: 160px;
+  margin: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardstyle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  will-change: transform, opacity;
+}
+
+@media only screen and (max-device-width: 700px) {
+  html {
+    margin-top: 5%;
   }
-  to {
-    transform: rotate(360deg);
+  .cardstyle {
+    width: 90px;
+    height: 90px;
   }
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.cardfront,
+.cardback {
+  background-size: cover;
+}
+
+.cardback {
+  background-image: url(https://www.pngitem.com/pimgs/m/166-1662163_hey-arnold-no-background-png-download-hey-arnold.png);
 }
